@@ -1,21 +1,2 @@
-============================= test session starts ==============================
-platform darwin -- Python 3.15.2, pytest-9.2.0, pluggy-1.7.0 -- /Users/apple/Desktop/30_day_learning/Day 4/.venv/bin/python3
-cachedir: .pytest_cache
-rootdir: /Users/apple/Desktop/30_day_learning/Day 4
-plugins: anyio-4.16.0
-collecting ... collected 12 items
-
-tests/test_ticket_processor.py::test_valid_csv_loading PASSED            [  8%]
-tests/test_ticket_processor.py::test_valid_ticket_processing PASSED      [ 16%]
-tests/test_ticket_processor.py::test_priority_counts PASSED              [ 25%]
-tests/test_ticket_processor.py::test_category_average_resolution PASSED  [ 33%]
-tests/test_ticket_processor.py::test_empty_file PASSED                   [ 41%]
-tests/test_ticket_processor.py::test_missing_required_columns PASSED     [ 50%]
-tests/test_ticket_processor.py::test_invalid_resolution_value PASSED     [ 58%]
-tests/test_ticket_processor.py::test_negative_resolution_value PASSED    [ 66%]
-tests/test_ticket_processor.py::test_missing_required_values PASSED      [ 75%]
-tests/test_ticket_processor.py::test_malformed_csv PASSED                [ 83%]
-tests/test_ticket_processor.py::test_original_dataframe_is_not_modified PASSED [ 91%]
-tests/test_ticket_processor.py::test_quality_percentage PASSED           [100%]
-
-============================== 12 passed in 0.52s ==============================
+............                                                             [100%]
+12 passed in 0.64s
