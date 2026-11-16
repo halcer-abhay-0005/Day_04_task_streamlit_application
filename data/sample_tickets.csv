@@ -1,0 +1,101 @@
+ticket_id,priority,category,resolution_time_hours,created_at,status
+TKT001,Low,Network,1.8,2026-10-02,In Progress
+TKT002,Medium,Technical,3.1,2026-10-03,Resolved
+TKT003,High,Network,4.4,2026-10-04,Closed
+TKT004,Critical,Technical,5.7,2026-10-05,Open
+TKT005,Low,Network,7.0,2026-10-06,In Progress
+TKT006,Medium,Technical,8.3,2026-10-07,Resolved
+TKT007,High,Network,9.6,2026-10-08,Closed
+TKT008,Critical,Technical,1.4,2026-10-09,Open
+TKT009,Low,Network,2.7,2026-10-10,In Progress
+TKT010,Medium,Technical,4.0,2026-10-11,Resolved
+TKT011,High,Network,5.3,2026-10-12,Closed
+TKT012,Critical,Technical,6.6,2026-10-13,Open
+TKT013,Low,Network,7.9,2026-10-14,In Progress
+TKT014,Medium,Technical,9.2,2026-10-15,Resolved
+TKT015,High,Network,1.0,2026-10-16,Closed
+TKT016,Critical,Technical,2.3,2026-10-17,Open
+TKT017,Low,Network,3.6,2026-10-18,In Progress
+TKT018,Medium,Technical,4.9,2026-10-19,Resolved
+TKT019,High,Network,6.2,2026-10-20,Closed
+TKT020,Critical,Technical,7.5,2026-10-21,Open
+TKT021,Low,Network,8.8,2026-10-22,In Progress
+TKT022,Medium,Technical,0.6,2026-10-23,Resolved
+TKT023,High,Network,1.9,2026-10-24,Closed
+TKT024,Critical,Technical,3.2,2026-10-25,Open
+TKT025,Low,Network,4.5,2026-10-26,In Progress
+TKT026,Medium,Technical,5.8,2026-10-27,Resolved
+TKT027,High,Network,7.1,2026-10-28,Closed
+TKT028,Critical,Technical,8.4,2026-10-01,Open
+TKT029,Low,Network,9.7,2026-10-02,In Progress
+TKT030,Medium,Technical,1.5,2026-10-03,Resolved
+TKT031,High,Network,2.8,2026-10-04,Closed
+TKT032,Critical,Technical,4.1,2026-10-05,Open
+TKT033,Low,Network,5.4,2026-10-06,In Progress
+TKT034,Medium,Technical,6.7,2026-10-07,Resolved
+TKT035,High,Network,8.0,2026-10-08,Closed
+TKT036,Critical,Technical,9.3,2026-10-09,Open
+TKT037,Low,Network,1.1,2026-10-10,In Progress
+TKT038,Medium,Technical,2.4,2026-10-11,Resolved
+TKT039,High,Network,3.7,2026-10-12,Closed
+TKT040,Critical,Technical,5.0,2026-10-13,Open
+TKT041,Low,Network,6.3,2026-10-14,In Progress
+TKT042,Medium,Technical,7.6,2026-10-15,Resolved
+TKT043,High,Network,8.9,2026-10-16,Closed
+TKT044,Critical,Technical,0.7,2026-10-17,Open
+TKT045,Low,Network,2.0,2026-10-18,In Progress
+TKT046,Medium,Technical,3.3,2026-10-19,Resolved
+TKT047,High,Network,4.6,2026-10-20,Closed
+TKT048,Critical,Technical,5.9,2026-10-21,Open
+TKT049,Low,Network,7.2,2026-10-22,In Progress
+TKT050,Medium,Technical,8.5,2026-10-23,Resolved
+TKT051,High,Network,9.8,2026-10-24,Closed
+TKT052,Critical,Technical,1.6,2026-10-25,Open
+TKT053,Low,Network,2.9,2026-10-26,In Progress
+TKT054,Medium,Technical,4.2,2026-10-27,Resolved
+TKT055,High,Network,5.5,2026-10-28,Closed
+TKT056,Critical,Technical,6.8,2026-10-01,Open
+TKT057,Low,Network,8.1,2026-10-02,In Progress
+TKT058,Medium,Technical,9.4,2026-10-03,Resolved
+TKT059,High,Network,1.2,2026-10-04,Closed
+TKT060,Critical,Technical,2.5,2026-10-05,Open
+TKT061,Low,Network,3.8,2026-10-06,In Progress
+TKT062,Medium,Technical,5.1,2026-10-07,Resolved
+TKT063,High,Network,6.4,2026-10-08,Closed
+TKT064,Critical,Technical,7.7,2026-10-09,Open
+TKT065,Low,Network,9.0,2026-10-10,In Progress
+TKT066,Medium,Technical,0.8,2026-10-11,Resolved
+TKT067,High,Network,2.1,2026-10-12,Closed
+TKT068,Critical,Technical,3.4,2026-10-13,Open
+TKT069,Low,Network,4.7,2026-10-14,In Progress
+TKT070,Medium,Technical,6.0,2026-10-15,Resolved
+TKT071,High,Network,7.3,2026-10-16,Closed
+TKT072,Critical,Technical,8.6,2026-10-17,Open
+TKT073,Low,Network,9.9,2026-10-18,In Progress
+TKT074,Medium,Technical,1.7,2026-10-19,Resolved
+TKT075,High,Network,3.0,2026-10-20,Closed
+TKT076,Critical,Technical,4.3,2026-10-21,Open
+TKT077,Low,Network,5.6,2026-10-22,In Progress
+TKT078,Medium,Technical,6.9,2026-10-23,Resolved
+TKT079,High,Network,8.2,2026-10-24,Closed
+TKT080,Critical,Technical,9.5,2026-10-25,Open
+TKT081,Low,Network,1.3,2026-10-26,In Progress
+TKT082,Medium,Technical,2.6,2026-10-27,Resolved
+TKT083,High,Network,3.9,2026-10-28,Closed
+TKT084,Critical,Technical,5.2,2026-10-01,Open
+TKT085,Low,Network,6.5,2026-10-02,In Progress
+TKT086,Medium,Technical,7.8,2026-10-03,Resolved
+TKT087,High,Network,9.1,2026-10-04,Closed
+TKT088,Critical,Technical,0.9,2026-10-05,Open
+TKT089,Low,Network,2.2,2026-10-06,In Progress
+TKT090,Medium,Technical,3.5,2026-10-07,Resolved
+TKT091,High,Network,4.8,2026-10-08,Closed
+TKT092,Critical,Technical,6.1,2026-10-09,Open
+TKT093,Low,Network,7.4,2026-10-10,In Progress
+TKT094,Medium,Technical,8.7,2026-10-11,Resolved
+TKT095,High,Network,0.5,2026-10-12,Closed
+TKT096,Critical,Technical,1.8,2026-10-13,Open
+TKT097,Low,Network,3.1,2026-10-14,In Progress
+TKT098,Medium,Technical,4.4,2026-10-15,Resolved
+TKT099,High,Network,5.7,2026-10-16,Closed
+TKT100,Critical,Technical,7.0,2026-10-17,Open
