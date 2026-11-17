@@ -124,3 +124,56 @@ Low,Billing,invalid
     result = process_ticket_csv(csv_data)
 
     assert result["quality_summary"]["data_quality_percentage"] == 50.0
+
+
+
+@pytest.mark.parametrize("bad_value", ["inf", "-inf", "Infinity", "-Infinity"])
+def test_non_finite_resolution_values_are_rejected(bad_value):
+    csv_data = (
+        "priority,category,resolution_time_hours\n"
+        f"High,Technical,{bad_value}\n"
+        "Low,Billing,2\n"
+    ).encode()
+
+    result = process_ticket_csv(csv_data)
+
+    assert result["quality_summary"]["valid_rows"] == 1
+    assert result["quality_summary"]["invalid_rows"] == 1
+    assert result["quality_summary"]["invalid_resolution_values"] == 1
+    assert result["category_resolution"].to_dict() == {"Billing": 2.0}
+    assert result["category_resolution"].map(lambda value: __import__("math").isfinite(value)).all()
+
+
+def test_extra_field_in_csv_row_is_rejected_with_clear_error():
+    csv_data = (
+        b"ticket_id,priority,category,resolution_time_hours\n"
+        b"TKT001,High,Technical,5,unexpected\n"
+    )
+
+    with pytest.raises(ValueError, match=r"row 2 contains 5 fields; expected 4"):
+        process_ticket_csv(csv_data)
+
+
+def test_short_csv_row_is_rejected():
+    csv_data = (
+        b"ticket_id,priority,category,resolution_time_hours\n"
+        b"TKT001,High,Technical\n"
+    )
+
+    with pytest.raises(ValueError, match=r"row 2 contains 3 fields; expected 4"):
+        process_ticket_csv(csv_data)
+
+
+@pytest.mark.parametrize(
+    "header",
+    [
+        "priority,priority,category,resolution_time_hours",
+        "priority, Priority ,category,resolution_time_hours",
+        "priority,PRIORITY,category,resolution_time_hours",
+    ],
+)
+def test_duplicate_raw_headers_are_rejected_before_pandas(header):
+    csv_data = (header + "\nHigh,Low,Technical,5\n").encode()
+
+    with pytest.raises(ValueError, match="Duplicate column names detected"):
+        process_ticket_csv(csv_data)

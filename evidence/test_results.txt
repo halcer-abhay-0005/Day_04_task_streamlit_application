@@ -1,2 +1,56 @@
-............                                                             [100%]
-12 passed in 0.64s
+============================= test session starts ==============================
+platform linux -- Python 3.13.5, pytest-9.0.2, pluggy-1.6.0 -- /opt/pyvenv/bin/python
+cachedir: .pytest_cache
+metadata: {'Python': '3.13.5', 'Platform': 'Linux-6.18.57-x86_64-with-glibc2.41', 'Packages': {'pytest': '9.0.2', 'pluggy': '1.6.0'}, 'Plugins': {'anyio': '4.13.0', 'ddtrace': '4.4.0', 'Faker': '40.1.2', 'asyncio': '1.3.0', 'cov': '7.0.0', 'json-report': '1.5.0', 'metadata': '3.1.1'}, 'PLATFORM': 'linux/amd64', 'CI': 'true'}
+rootdir: /mnt/data/Day_04_task_streamlit_application_fixed
+plugins: anyio-4.13.0, ddtrace-4.4.0, Faker-40.1.2, asyncio-1.3.0, cov-7.0.0, json-report-1.5.0, metadata-3.1.1
+asyncio: mode=Mode.STRICT, debug=False, asyncio_default_fixture_loop_scope=None, asyncio_default_test_loop_scope=function
+collecting ... collected 21 items
+
+tests/test_ticket_processor.py::test_valid_csv_loading PASSED            [  4%]
+tests/test_ticket_processor.py::test_valid_ticket_processing PASSED      [  9%]
+tests/test_ticket_processor.py::test_priority_counts PASSED              [ 14%]
+tests/test_ticket_processor.py::test_category_average_resolution PASSED  [ 19%]
+tests/test_ticket_processor.py::test_empty_file PASSED                   [ 23%]
+tests/test_ticket_processor.py::test_missing_required_columns PASSED     [ 28%]
+tests/test_ticket_processor.py::test_invalid_resolution_value PASSED     [ 33%]
+tests/test_ticket_processor.py::test_negative_resolution_value PASSED    [ 38%]
+tests/test_ticket_processor.py::test_missing_required_values PASSED      [ 42%]
+tests/test_ticket_processor.py::test_malformed_csv PASSED                [ 47%]
+tests/test_ticket_processor.py::test_original_dataframe_is_not_modified PASSED [ 52%]
+tests/test_ticket_processor.py::test_quality_percentage PASSED           [ 57%]
+tests/test_ticket_processor.py::test_non_finite_resolution_values_are_rejected[inf] PASSED [ 61%]
+tests/test_ticket_processor.py::test_non_finite_resolution_values_are_rejected[-inf] PASSED [ 66%]
+tests/test_ticket_processor.py::test_non_finite_resolution_values_are_rejected[Infinity] PASSED [ 71%]
+tests/test_ticket_processor.py::test_non_finite_resolution_values_are_rejected[-Infinity] PASSED [ 76%]
+tests/test_ticket_processor.py::test_extra_field_in_csv_row_is_rejected_with_clear_error PASSED [ 80%]
+tests/test_ticket_processor.py::test_short_csv_row_is_rejected PASSED    [ 85%]
+tests/test_ticket_processor.py::test_duplicate_raw_headers_are_rejected_before_pandas[priority,priority,category,resolution_time_hours] PASSED [ 90%]
+tests/test_ticket_processor.py::test_duplicate_raw_headers_are_rejected_before_pandas[priority, Priority ,category,resolution_time_hours] PASSED [ 95%]
+tests/test_ticket_processor.py::test_duplicate_raw_headers_are_rejected_before_pandas[priority,PRIORITY,category,resolution_time_hours] PASSED [100%]
+
+============================== 21 passed in 0.19s ==============================
+
+STDERR:
+[0m[33mWarning[0m[2m:[0m [1mThe 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.[0m
+[0m      [2mat [0memitWarning[2m ([0m[0m[36munknown[0m[2m:[0m[33m1[0m[2m:[33m1[0m[2m)[0m
+[0m      [2mat [0mwarnOnDeactivatedColors[2m ([0m[0m[36minternal:tty[0m[2m:[0m[33m33[0m[2m:[33m24[0m[2m)[0m
+[0m      [2mat [0mgetColorDepth[2m ([0m[0m[36minternal:tty[0m[2m:[0m[33m42[0m[2m:[33m39[0m[2m)[0m
+[0m      [2mat [0mshouldColorize[2m ([0m[0m[36minternal:util/colors[0m[2m:[0m[33m14[0m[2m:[33m109[0m[2m)[0m
+[0m      [2mat [0mrefresh[2m ([0m[0m[36minternal:util/colors[0m[2m:[0m[33m18[0m[2m:[33m31[0m[2m)[0m
+[0m      [2mat [0minternal:util/colors[2m ([0m[0m[36minternal:util/colors[0m[2m:[0m[33m24[0m[2m:[33m16[0m[2m)[0m
+[0m      [2mat [0manonymous[2m ([0m[0m[36munknown[0m[2m:[0m[33m1[0m[2m:[33m1[0m[2m)[0m
+[0m      [2mat [0minternal:assert/assertion_error[2m ([0m[0m[36minternal:assert/assertion_error[0m[2m:[0m[33m2[0m[2m:[33m187[0m[2m)[0m
+[0m      [2mat [0manonymous[2m ([0m[0m[36munknown[0m[2m:[0m[33m1[0m[2m:[33m1[0m[2m)[0m
+[0m      [2mat [0mloadAssertionError[2m ([0m[0m[36mnode:assert[0m[2m:[0m[33m28[0m[2m:[33m96[0m[2m)[0m
+
+Spreadsheet runtime warmup failed during python startup
+Traceback (most recent call last):
+  File "/tmp/tmp.QlpUkOUI9D/artifact_tool_v2-2.8.66/artifact_tool/patches/warm_spreadsheet_runtime_on_startup.py", line 26, in warm_spreadsheet_runtime_on_startup
+  File "/tmp/tmp.QlpUkOUI9D/artifact_tool_v2-2.8.66/artifact_tool/spreadsheet_warmup.py", line 785, in warm_spreadsheet_runtime
+  File "/tmp/tmp.QlpUkOUI9D/artifact_tool_v2-2.8.66/artifact_tool/spreadsheet_warmup.py", line 718, in _warm_feature_flows
+  File "/tmp/tmp.QlpUkOUI9D/artifact_tool_v2-2.8.66/artifact_tool/spreadsheet_warmup.py", line 509, in _warm_drawing_and_image_flows
+  File "/tmp/tmp.QlpUkOUI9D/artifact_tool_v2-2.8.66/artifact_tool/generated/interface/models.py", line 32861, in bring_to_front
+  File "/tmp/tmp.QlpUkOUI9D/artifact_tool_v2-2.8.66/artifact_tool/rpc/remote.py", line 764, in __call__
+  File "/tmp/tmp.QlpUkOUI9D/artifact_tool_v2-2.8.66/artifact_tool/rpc/client.py", line 175, in call
+artifact_tool.rpc.client.RemoteError: Element ordering requires an owning element collection.

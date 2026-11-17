@@ -80,7 +80,9 @@ app.py
 ## Assumptions
 - CSV files are supported.
 - Priority, category, and resolution time are required.
-- Resolution time must be numeric and non-negative.
+- Resolution time must be numeric, finite (not `inf` or `-inf`), and non-negative.
+- CSV headers must be unique after case/whitespace normalization.
+- Every non-blank data row must contain exactly the same number of fields as the header; malformed row widths are rejected.
 - Invalid records are excluded from analytics.
 - Original uploaded columns are preserved.
 
